@@ -7,4 +7,8 @@ public with sharing class firstClass {
         System.debug('this is my class i scratch');
         return 'this is my st : '+st;
     }
+      public static void getSub(){
+        System.debug('this is my subtraction');
+       
+    }
 }
