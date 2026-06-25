@@ -16,9 +16,14 @@ public with sharing class firstClass {
         System.debug('this is my subtraction');
        
     }
-    //added one more method for add.. :)
+    //added one more method for add.. :)...
      public static void getAdd(){
         System.debug('this is my addition');
        
+    }
+    //using soql.. in the code
+    public static void getData(){
+       Account ac =  [select name from Account where name = 'Genepoint'];
+       system.debug(ac.name +' welcome..!!');
     }
 }
